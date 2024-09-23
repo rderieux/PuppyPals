@@ -3,11 +3,16 @@ import { puppyList } from "./data.js";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  console.log(puppyList);
+  const [puppies, setPuppies] = useState(puppyList);
 
   return (
     <>
-      <div></div>
+      <div>
+        {puppies.map((puppy) => {
+          return <p key={puppy.id}>{puppy.name}</p>;
+        })}
+      </div>
     </>
   );
 }
