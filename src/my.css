@@ -1,0 +1,9 @@
+#main {
+  display: flex;
+  background-color: burlywood;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
